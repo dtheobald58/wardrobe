@@ -1,0 +1,67 @@
+﻿@model wardrobe.Models.Bottom
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Bottom</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Name:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomName)
+        </dd>
+
+        <dt>
+            Color:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color.ColorName)
+        </dd>
+
+        <dt>
+            Type:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomType.BottomTypeName)
+        </dd>
+
+        <dt>
+            Occassion:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Occassion.OccassionName)
+        </dd>
+
+        <dt>
+            Season:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Season.SeasonName)
+        </dd>
+
+        <dt>
+            Photo:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomPhoto)<br />
+            <img src="@Url.Content(Model.BottomPhoto)" />     
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BottomID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,67 @@
+﻿@model wardrobe.Models.Footwear
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Footwear</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Name:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FootwearName)
+        </dd>
+
+        <dt>
+            Type:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FootwearType.FootwearTypeName)
+        </dd>
+
+        <dt>
+            Color:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color.ColorName)
+        </dd>
+
+        <dt>
+            Occassion:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Occassion.OccassionName)
+        </dd>
+
+        <dt>
+            Season:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Season.SeasonName)
+        </dd>
+
+        <dt>
+            Photo:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FootwearPhoto)<br />
+            <img src="@Url.Content(Model.FootwearPhoto)" />
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.FootwearID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

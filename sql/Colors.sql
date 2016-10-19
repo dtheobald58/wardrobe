@@ -1,0 +1,21 @@
+USE [wardrobe]
+GO
+
+/****** Object:  Table [dbo].[Colors]    Script Date: 10/19/2016 3:50:24 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Colors](
+	[ColorID] [int] IDENTITY(1,1) NOT NULL,
+	[ColorName] [nvarchar](25) NULL,
+ CONSTRAINT [PK_Colors] PRIMARY KEY CLUSTERED 
+(
+	[ColorID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+

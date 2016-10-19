@@ -1,0 +1,43 @@
+﻿@model IEnumerable<wardrobe.Models.Bottom>
+
+@{
+    ViewBag.Title = "Bottoms";
+}
+
+<h2>Bottoms</h2>
+
+<p>
+    @Html.ActionLink("Add Bottom", "Create")
+</p>
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="indexBox">
+                <div class="col col-md-2">
+                    <img id="indexImg" src="@Url.Content(item.BottomPhoto)" />
+                </div>
+                <div id="indexText" class="col-md-4">
+                    <h3>@Html.DisplayFor(modelItem => item.BottomName)</h3>
+                    <p>
+                        @Html.DisplayFor(modelItem => item.BottomType.BottomTypeName)<br />
+                        @Html.DisplayFor(modelItem => item.Color.ColorName)<br />
+                        @Html.DisplayFor(modelItem => item.Season.SeasonName)<br />
+                        @Html.DisplayFor(modelItem => item.Occassion.OccassionName)
+                        <br />
+                        <span>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.BottomID }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.BottomID }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.BottomID })
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+
+
+        }
+    </div>
+</div>
+

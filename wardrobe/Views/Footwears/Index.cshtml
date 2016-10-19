@@ -1,0 +1,40 @@
+﻿@model IEnumerable<wardrobe.Models.Footwear>
+
+@{
+    ViewBag.Title = "Footwear";
+}
+
+<h2>Footwear</h2>
+
+<p>
+    @Html.ActionLink("Add Footwear", "Create")
+</p>
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="indexBox">
+                <div class="col col-md-2">
+                    <img id="indexImg2" src="@Url.Content(item.FootwearPhoto)" />
+                </div>
+                <div id="indexText" class="col-md-4">
+                    <h3>@Html.DisplayFor(modelItem => item.FootwearName)</h3>
+                    <p>
+                        @Html.DisplayFor(modelItem => item.FootwearType.FootwearTypeName)<br />
+                        @Html.DisplayFor(modelItem => item.Color.ColorName)<br />
+                        @Html.DisplayFor(modelItem => item.Season.SeasonName)<br />
+                        @Html.DisplayFor(modelItem => item.Occassion.OccassionName)
+                        <br />
+                        <span>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.FootwearID }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.FootwearID }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.FootwearID })
+                        </span>
+                    </p>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+

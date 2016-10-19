@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c7809038bf2147598cfbdfc28b80c4fa" Name="Diagram1">
+        <EntityTypeShape EntityType="wardrobeModel.Accessory" Width="1.5" PointX="3" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="wardrobeModel.AccessoryType" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="wardrobeModel.Bottom" Width="1.5" PointX="6" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="wardrobeModel.BottomType" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="wardrobeModel.Color" Width="1.5" PointX="0.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="wardrobeModel.Footwear" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="wardrobeModel.FootwearType" Width="1.5" PointX="0.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="wardrobeModel.Occassion" Width="1.5" PointX="0.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="wardrobeModel.Outfit" Width="1.5" PointX="8.25" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="wardrobeModel.Season" Width="1.5" PointX="0.75" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="wardrobeModel.sysdiagram" Width="1.5" PointX="5.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="wardrobeModel.Top" Width="1.5" PointX="3" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="wardrobeModel.TopType" Width="1.5" PointX="0.75" PointY="19.75" IsExpanded="true" />
+        <AssociationConnector Association="wardrobeModel.FK_Accessories_AccessoryTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="wardrobeModel.FK_Accessories_Colors" ManuallyRouted="false" />
+        <AssociationConnector Association="wardrobeModel.FK_Accessories_Occassions" ManuallyRouted="false" />
+        <AssociationConnector Association="wardrobeModel.FK_Accessories_Seasons" ManuallyRouted="false" />
+        <AssociationConnector Association="wardrobeModel.FK_Outfit_Accessories" ManuallyRouted="false" />
+        <AssociationConnector Association="wardrobeModel.FK_Bottoms_BottomTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="wardrobeModel.FK_Bottoms_Colors" ManuallyRouted="false" />
+        <AssociationConnector Association="wardrobeModel.FK_Bottoms_Occassions" ManuallyRouted="false" />
+        <AssociationConnector Association="wardrobeModel.FK_Bottoms_Seasons" ManuallyRouted="false" />
+        <AssociationConnector Association="wardrobeModel.FK_Outfit_Bottoms" ManuallyRouted="false" />
+        <AssociationConnector Association="wardrobeModel.FK_Footwear_Colors" ManuallyRouted="false" />
+        <AssociationConnector Association="wardrobeModel.FK_Tops_Colors" ManuallyRouted="false" />
+        <AssociationConnector Association="wardrobeModel.FK_Footwear_FootwearTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="wardrobeModel.FK_Footwear_Occassions" ManuallyRouted="false" />
+        <AssociationConnector Association="wardrobeModel.FK_Footwear_Seasons" ManuallyRouted="false" />
+        <AssociationConnector Association="wardrobeModel.FK_Outfit_Footwear" ManuallyRouted="false" />
+        <AssociationConnector Association="wardrobeModel.FK_Tops_Occassions" ManuallyRouted="false" />
+        <AssociationConnector Association="wardrobeModel.FK_Outfit_Tops" ManuallyRouted="false" />
+        <AssociationConnector Association="wardrobeModel.FK_Tops_Seasons" ManuallyRouted="false" />
+        <AssociationConnector Association="wardrobeModel.FK_Tops_TopTypes" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

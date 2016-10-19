@@ -1,0 +1,21 @@
+USE [wardrobe]
+GO
+
+/****** Object:  Table [dbo].[TopTypes]    Script Date: 10/19/2016 3:51:39 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[TopTypes](
+	[TopTypeID] [int] IDENTITY(1,1) NOT NULL,
+	[TopTypeName] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK_TopTypes] PRIMARY KEY CLUSTERED 
+(
+	[TopTypeID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
